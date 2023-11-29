@@ -1,29 +1,39 @@
 /* General styling */
 body {
 
-    background-color: rgb(226, 221, 221);
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: rgb(23, 23, 23);
+    color: #FFD700;
+    font-family: sans-serif
+    font-size
+
 }
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #7851A9;
+    
 }
+
 
 .button {
     padding: 10px 20px;
     background-color: #9584c8;
-    color: #fff;
-    border: none;
+    color: #9584c8;
+    border:none;
     cursor: pointer;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: rgb(153, 123, 17);
+    background-color: rgb(23, 23, 23);
     padding: 10px;
+    font-size: 30px;
+    text-align: right;
+    
 }
 
 nav ul {
@@ -34,7 +44,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 /* Sections */
@@ -44,7 +54,7 @@ section {
 }
 
 h1, h2 {
-    text-align: center;
+    text-align: left;
 }
 
 p {
@@ -59,6 +69,7 @@ form {
 
 label {
     display: block;
+
     margin-bottom: 5px;
 }
 

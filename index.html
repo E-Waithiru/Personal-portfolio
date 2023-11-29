@@ -7,40 +7,86 @@
     
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            line-height: 150%;
+            font-size: larger;
+            font-family: sans-serif  
+            
+        }
+        .parts {
+            padding: 4rem;
+        }
+        header{
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+            gap: 5rem;
+        }
+        .man{
+            display: grid;
+            grid-template-columns:3fr 1fr ;
+            align-items: center;
+            gap: 1rem;
+        }
 
+        .man img {
+            width: auto;
+        }
+</style>
 </head>
-<body>
+
+<body class ="flip">
+    <section class ="parts">
+        <header class ="main-header">
+            <a href=""><img src="download.png" alt="Liz's avatar"sizes="300px"></a>
+            <!-- <img src="" alt="" sizes="" srcset=""> -->
    
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+       
+        </style>
     </nav>
+    </header>
 
-    <section id="home">
-        <h1>Elizabeth Waithiru</h1>
+    <section class="home">
+        <div class="content">
+        <h1>Elizabeth</h1>
+        <br>
+        <h2>About Me</h2>
         <p>
            <i><strong>Hello there!</strong></i> 
         </p>
             <p>I'm an avid IT enthusiast with an insatiable curiosity for all things tech. As a dedicated student in the dynamic world of Information Technology, I thrive on the excitement of continuous learning and innovation. My journey in IT is not just about acquiring knowledge but embracing the challenges that come with it. From coding to networking, I'm always eager to dive into new technologies and explore innovative solutions. </p>
             <p>My passion extends beyond the classroom, as I actively seek opportunities to apply my skills and contribute to real-world projects. I believe in the power of technology to transform and improve lives, and I'm committed to being a lifelong learner in this ever-evolving field. Let's embark on this digital adventure together!
         </p>
-       
-    </section>
-    <hr>
+        
+</class></div>
+<img src="illustration.svg" alt="illustration"width="200px" height="200px"align-items="center">
+       </section>
 
-    <section id="about">
-        <h2>Experience</h2>
+
+    <section id="Projects">
+        <div class="card" id="projects">
+        <h2>My Projects</h2>
+        <ul class="My Projects"></ul>
         <p><ol>
-            <li>Database Management Project - Designed and implemented a relational database using MySQL.
-                Created tables, views, and queries to efficiently manage data.</li>
-            <li>Java Programming Project - Developed a console-based application to perform basic operations on employee records. Utilized object-oriented programming principles.
-            </li>
-            <li>Web Development Project - Developed a responsive website using HTML, CSS, and JavaScript. Implemented user-friendly design and optimized performance.</p>
+            <li>Database Management Project <ul>Designed and implemented a relational database using MySQL.</ul>
+                <ul>Created tables, views, and queries to efficiently manage data.</ul>
+            <li>Java Programming Project <ul>Developed a console-based application to perform basic operations on employee records. Utilized object-oriented programming principles.</ul>
+            <li>Web Development Project <ul>Developed a responsive website using HTML, CSS, and JavaScript. Implemented user-friendly design and optimized performance.</ul>
             </li>
         </ol>
+        </p>
+        </div>
 
         <div>
             <h3>Skills</h3>
@@ -59,7 +105,6 @@
         </div>
 
     </section>
-    <hr>
 
     <section id="contact">
         <h2>Contact</h2>
