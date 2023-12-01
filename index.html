@@ -18,78 +18,156 @@
             
         }
         .parts {
-            padding: 4rem;
+            padding: 2rem;
         }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            letter-spacing: 2px;
+            margin: 1rem 0 1rem;
+        }
+
+        h2{
+            font-size: 2.5rem;
+            line-height: 1;
+            font-weight: 400;
+            color: #ce4770;
+            margin-bottom: 3rem;
+        }
+
+        p.accent {
+            font-size: 3rem;
+            line-height: 3rem;
+            color: #05ccbc ;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
         header{
             margin-bottom: 1rem;
             display: flex;
             justify-content:space-between ;
-            align-items: center;
-            gap: 5rem;
+            align-items:center;
+            gap: 2rem;
         }
+
         .man{
             display: grid;
-            grid-template-columns:3fr 1fr ;
-            align-items: center;
-            gap: 1rem;
+            grid-template-columns:1fr 1fr ;
+            align-items:center;
+            gap: 3rem;
         }
 
         .man img {
-            width: auto;
+            max-width: 100%;
         }
+
+      .btn-mobile {
+        display:inline-block;
+      }
+
+      @media  screen and (max-width: 600px) {
+        header nav ,
+        header .btn{
+            display:none;
+        }
+      }
+
+      .btn-mobile{
+        display:none;
+      }
+      .man-img{
+        grid-template-columns: 1fr;
+      }
+
+      .man-img {
+        order: -1;
+      }
+
+
 </style>
 </head>
 
 <body class ="flip">
     <section class ="parts">
         <header class ="main-header">
-            <a href=""><img src="download.png" alt="Liz's avatar"sizes="300px"></a>
-            <!-- <img src="" alt="" sizes="" srcset=""> -->
-   
+            <a href=""><img src="images/download.png" alt="Liz's avatar"sizes="30px"></a>
+            
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">About Me</a></li>
+            <li><a href="#about me">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+            
+    <a href="" class="btn-mobile"><img src="images/icons8-menu-24.png" alt="menu" ></a>
        
         </style>
     </nav>
     </header>
 
-    <section class="home">
+    <section class="man">
         <div class="content">
-        <h1>Elizabeth</h1>
-        <br>
-        <h2>About Me</h2>
-        <p>
-           <i><strong>Hello there!</strong></i> 
-        </p>
+            <p class="accent">Elizabeth Waithiru</p>
+        <h1><i>Hello there ☻</i></h1>
+        <p>Here is a "Get to know me"...</p>
             <p>I'm an avid IT enthusiast with an insatiable curiosity for all things tech. As a dedicated student in the dynamic world of Information Technology, I thrive on the excitement of continuous learning and innovation. My journey in IT is not just about acquiring knowledge but embracing the challenges that come with it. From coding to networking, I'm always eager to dive into new technologies and explore innovative solutions. </p>
             <p>My passion extends beyond the classroom, as I actively seek opportunities to apply my skills and contribute to real-world projects. I believe in the power of technology to transform and improve lives, and I'm committed to being a lifelong learner in this ever-evolving field. Let's embark on this digital adventure together!
         </p>
+        </div>
         
-</class></div>
-<img src="illustration.svg" alt="illustration"width="200px" height="200px"align-items="center">
+<img src="images/illustration.svg" id= "man-img" alt="illustration">
        </section>
 
+       <br>
 
-    <section id="Projects">
-        <div class="card" id="projects">
-        <h2>My Projects</h2>
-        <ul class="My Projects"></ul>
-        <p><ol>
-            <li>Database Management Project <ul>Designed and implemented a relational database using MySQL.</ul>
-                <ul>Created tables, views, and queries to efficiently manage data.</ul>
-            <li>Java Programming Project <ul>Developed a console-based application to perform basic operations on employee records. Utilized object-oriented programming principles.</ul>
-            <li>Web Development Project <ul>Developed a responsive website using HTML, CSS, and JavaScript. Implemented user-friendly design and optimized performance.</ul>
-            </li>
-        </ol>
-        </p>
+       <section id="About Me">
+        <div class="content">
+        <h2>About Me</h2>
+        <p> With a passion for three key areas: web development, product management, and cloud computing. I'm fascinated by the power of technology to create intuitive and impactful user experiences, and I find myself constantly exploring new tools and methodologies to refine my skills.</p>
+        <p>There is definitely room for improvement but so far,check out my Portfolio<a href="Elizabeth Waithiru cv.pdf" download> cv </a>or scroll further</p>
         </div>
+       </section>
+
+       <section id="Portfolio">
+        <h2>Projects</h2>
+        <div class="card-container">
+        <div class="card">
+            <img src="images/tech.jpg">
+        <div class="card-content">
+        <h3>Database Management Project</h3>
+            <p>Designed and implemented a relational database using MySQL.</p>
+           <p>Created tables, views, and queries to efficiently manage data.</p>
+        
+        </div>
+    </div>
+    </div>
+
+    <div class="card-container">
+    <div class="card">
+        <img src="images/tech.jpg">
+    <div class="card-content">
+    <h3>Java Programming Project</h3>
+        <p>Developed a console-based application to perform basic operations on employee records. Utilized object-oriented programming principles</p>
+    </div>
+</div>
+</div>
+
+        <div class="card-container">
+
+<div class="card">
+    <img src="images/tech.jpg">
+<div class="card-content">
+<h3>Web Development Project </h3>
+    <p>Developed a responsive website using HTML, CSS, and JavaScript. Implemented user-friendly design and optimized performance.</p>
+</div>
+</div>
+</div>
 
         <div>
-            <h3>Skills</h3>
+            <h4>Other Skills</h4>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -102,11 +180,17 @@
 
         <div>
             <p>Here is my <a href="https://github.com/E-Waithiru">github</a> to see more of my work </p>
+            <p>Here is the video i used to learn<a href="https://www.youtube.com/playlist?list=PLBMpkmCcUiIA_99a-26kBEQvh9OeWGsV2"> HTML,CSS and Figma</a> ,the basic concepts at least. </p>
+
         </div>
+
 
     </section>
 
     <section id="contact">
+        <p>To reach out for any of my services</p>
+       <button type="button">HIRE ME</button>
+       <br>
         <h2>Contact</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
@@ -118,8 +202,12 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="3" required></textarea>
 
-            <button type="submit">Send</button>
+            <button type="button">Send</button>
         </form>
     </section>
+
+    <footer>
+        <p>Author: ENW<br>
+      </footer>
 </body>
 </html>
